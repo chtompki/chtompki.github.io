@@ -509,6 +509,12 @@ mark,
   background-color: #fcf8e3;
 }
 
+
+.front-image {
+    position: relative !important;
+    text-align: center;
+}
+
 .list-unstyled {
   padding-left: 0;
   list-style: none;

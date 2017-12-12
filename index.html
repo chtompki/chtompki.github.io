@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="stylesheet" href="vendor/jquery/jquery.bxslider.css">
 
     <title>Rob Tompkins</title>
 
@@ -59,12 +60,11 @@
 <div class="container main-content">
     <div class="row">
         <div class="col-lg-12 text-center">
-            <h1 class="mt-5">Work in progress</h1>
-            <p class="lead">It'll get there eventuallly</p>
-            <ul class="list-unstyled">
-                <li>There will be photos....</li>
-                <li>and such</li>
-            </ul>
+            <div id="slider">
+                <img class="front-image" src="images/Best_Photos_069.jpg" />
+                <img class="front-image" src="images/Best_Photos_033.jpg" />
+                <img class="front-image" src="images/DSC_1138.jpg" style="max-height: 638px; max-width: 424px;"/>
+            </div>
             <h5>© 2009-2017 Rob Tompkins</h5>
         </div>
     </div>
@@ -73,6 +73,31 @@
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/jquery/jquery.slides.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#slider').slidesjs({
+            height: 650,
+            navigation: {
+                active: true,
+                effect: "fade"
+            },
+            pagination: {
+                active: false
+            },
+            play: {
+                active: false,
+                // [boolean] Generate the play and stop buttons.
+                // You cannot use your own buttons. Sorry.
+                effect: "slide",
+                auto: true,
+                // [string] Can be either "slide" or "fade".
+                interval: 5000,
+                pauseOnOver: true
+            }
+        });
+    });
+</script>
 
 </body>
 
