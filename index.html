@@ -13,6 +13,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="css/jquery.simplebanner.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <style>
@@ -61,14 +62,25 @@
 <!-- Page Content -->
 <div class="container main-content">
     <div class="row">
+        <div id="rotating" class="simpleBanner">
+            <div class="bannerListWpr">
+                <ul class="bannerList">
+                    <!-- LI list goes here -->
+                    <li><img src="images/Best_Photos_069.jpg" /></li>
+                    <li><img src="images/DSC_3289.jpg" /></li>
+                    <li><img src="images/DSC_6963-Version2.jpg" /></li>
+                    <li><img src="images/Best_Photos_033.jpg" /></li>
+                    <li><img src="images/DSC_3892.jpg" /></li>
+                </ul>
+            </div>
+            <div class="bannerControlsWpr bannerControlsPrev"><div class="bannerControls"></div></div>
+            <div class="bannerIndicators"><ul></ul></div>
+            <div class="bannerControlsWpr bannerControlsNext"><div class="bannerControls"></div></div>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-lg-12 text-center">
-            <h1 class="mt-5">Work in progress</h1>
-            <p class="lead">It'll get there eventuallly</p>
-            <ul class="list-unstyled">
-                <li>There will be photos....</li>
-                <li>and such</li>
-            </ul>
-            <h5>© 2009-2020 Rob Tompkins</h5>3
+            <h5>© 2009-2020 Rob Tompkins</h5>
         </div>
     </div>
 </div>
@@ -76,6 +88,12 @@
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.simplebanner.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#rotating').simplebanner();
+});
+</script>
 
 </body>
 
