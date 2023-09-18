@@ -13,3 +13,21 @@ img {
 #headshot {
     padding-top: 50px;
 }
+
+
+
+.sponsors.list-group {
+    text-align: center !important;
+}
+
+#apache-logo {
+    width: 260px;
+}
+
+#navteca-logo {
+    width: 120px;
+}
+
+#nasa-logo {
+    width: 260px;
+}
