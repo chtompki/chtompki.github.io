@@ -31,3 +31,10 @@ img {
 #nasa-logo {
     width: 260px;
 }
+
+.socialMediaLinks a {
+    font-size: 26px;
+    margin: 0 10px 0 0;
+    color: #000000;
+    text-decoration: none;
+}
